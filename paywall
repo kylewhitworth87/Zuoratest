@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 50px;
+		}
+
+		.subscription-options {
+			display: inline-block;
+			margin-top: 30px;
+			background-color: #e5e5e5;
+			padding: 20px;
+			border-radius: 5px;
+			text-align: left;
+		}
+
+		.subscription-options label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.subscription-options input[type=checkbox] {
+			margin-right: 10px;
+		}
+
+		.form-field {
+			margin-top: 20px;
+			display: block;
+			text-align: left;
+		}
+
+		.form-field label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.form-field input[type=text],
+		.form-field input[type=number],
+		.form-field input[type=date] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+
+		.form-field input[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>{{title}}</h1>
+	<a href="#">Click here to sign-in</a>
+	<div class="subscription-options">
+		<label><input type="checkbox" name="subscription1" value="10">$10 per month - {{add subscription1 info here}}</label>
+		<label><input type="checkbox" name="subscription2" value="20">$20 per month - {{add subscription2 info here}}</label>
+		<label><input type="checkbox" name="subscription3" value="30">$30 per month - {{add subscription3 info here}}</label>
+	</div>
+	<div class="form-container">
+		<form>
+			<div class="form-field">
+				<label>Title</label>
+				<input type="text" name="title">
+			</div>
+			<div class="form-field">
+				<label>First Name</label>
+				<input type="text" name="firstName">
+			</div>
+			<div class="form-field">
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+			<div class="form-field">
+				<label>Address</label>
+				<input type="text" name="address">
+			</div>
+			<div class="form-field">
+				<label>Card Number</label>
+				<input type="number" name="cardNumber">
+			</div>
+			<div class="form-field">
+				<label>Expiry Date</label>
+				<input type="date" name="expiryDate">
+			</div>
+			<div class="form-field">
+				<label>CCV Code</label>
+				<input type="number" name="ccvCode">
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
